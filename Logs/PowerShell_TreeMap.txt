@@ -1,0 +1,249 @@
+├── AIModels
+├── Data
+│   ├── RawAudio
+│   ├── Transcripts
+├── Diagnostics
+├── KnowledgeBase
+│   ├── GrokAI
+│   ├── OpenAI
+├── Logs
+│   ├── SessionLog.csv
+│   ├── XDrive_Full_WithFolders.csv
+├── Microsoft.PowerShell_profile.ps1
+├── Modules
+│   ├── ExchangeOnlineManagement
+│   │   ├── 3.7.2
+│   │   │   ├── en-US
+│   │   │   │   ├── ExchangeOnlineManagement-help.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll-Help.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.RestApiClient.dll-Help.xml
+│   │   │   ├── ExchangeOnlineManagement.psd1
+│   │   │   ├── license.txt
+│   │   │   ├── netCore
+│   │   │   │   ├── Azure.Core.dll
+│   │   │   │   ├── ExchangeOnlineManagement.psm1
+│   │   │   │   ├── Microsoft.Bcl.AsyncInterfaces.dll
+│   │   │   │   ├── Microsoft.Bcl.HashCode.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.AdminApiProvider.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.AdminApiProvider.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.deps.json
+│   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.RestApiClient.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.RestApiClient.xml
+│   │   │   │   ├── Microsoft.Extensions.ObjectPool.dll
+│   │   │   │   ├── Microsoft.Identity.Client.Broker.dll
+│   │   │   │   ├── Microsoft.Identity.Client.dll
+│   │   │   │   ├── Microsoft.Identity.Client.NativeInterop.dll
+│   │   │   │   ├── Microsoft.IdentityModel.Abstractions.dll
+│   │   │   │   ├── Microsoft.IdentityModel.JsonWebTokens.dll
+│   │   │   │   ├── Microsoft.IdentityModel.Logging.dll
+│   │   │   │   ├── Microsoft.IdentityModel.Tokens.dll
+│   │   │   │   ├── Microsoft.OData.Client.dll
+│   │   │   │   ├── Microsoft.OData.Core.dll
+│   │   │   │   ├── Microsoft.OData.Edm.dll
+│   │   │   │   ├── Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll
+│   │   │   │   ├── Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.xml
+│   │   │   │   ├── Microsoft.Spatial.dll
+│   │   │   │   ├── Microsoft.Win32.Registry.AccessControl.dll
+│   │   │   │   ├── Microsoft.Win32.SystemEvents.dll
+│   │   │   │   ├── msvcp140.dll
+│   │   │   │   ├── Newtonsoft.Json.dll
+│   │   │   │   ├── ref
+│   │   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll
+│   │   │   │   ├── runtimes
+│   │   │   │   │   ├── win-arm64
+│   │   │   │   │   │   ├── native
+│   │   │   │   │   │   │   ├── msalruntime_arm64.dll
+│   │   │   │   │   ├── win-x64
+│   │   │   │   │   │   ├── native
+│   │   │   │   │   │   │   ├── msalruntime.dll
+│   │   │   │   │   ├── win-x86
+│   │   │   │   │   │   ├── native
+│   │   │   │   │   │   │   ├── msalruntime_x86.dll
+│   │   │   │   ├── System.CodeDom.dll
+│   │   │   │   ├── System.Configuration.ConfigurationManager.dll
+│   │   │   │   ├── System.Diagnostics.EventLog.dll
+│   │   │   │   ├── System.Diagnostics.PerformanceCounter.dll
+│   │   │   │   ├── System.DirectoryServices.dll
+│   │   │   │   ├── System.Drawing.Common.dll
+│   │   │   │   ├── System.IdentityModel.Tokens.Jwt.dll
+│   │   │   │   ├── System.Management.dll
+│   │   │   │   ├── System.Memory.Data.dll
+│   │   │   │   ├── System.Security.Cryptography.Pkcs.dll
+│   │   │   │   ├── System.Security.Cryptography.ProtectedData.dll
+│   │   │   │   ├── System.Security.Permissions.dll
+│   │   │   │   ├── System.Windows.Extensions.dll
+│   │   │   │   ├── vcruntime140_1.dll
+│   │   │   │   ├── vcruntime140.dll
+│   │   │   ├── netFramework
+│   │   │   │   ├── Create-SelfSignedCertificate.ps1
+│   │   │   │   ├── ExchangeOnlineManagement.psm1
+│   │   │   │   ├── Microsoft.Bcl.AsyncInterfaces.dll
+│   │   │   │   ├── Microsoft.Bcl.AsyncInterfaces.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.AdminApiProvider.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.AdminApiProvider.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.xml
+│   │   │   │   ├── Microsoft.Exchange.Management.RestApiClient.dll
+│   │   │   │   ├── Microsoft.Exchange.Management.RestApiClient.xml
+│   │   │   │   ├── Microsoft.Identity.Client.Broker.dll
+│   │   │   │   ├── Microsoft.Identity.Client.Broker.xml
+│   │   │   │   ├── Microsoft.Identity.Client.dll
+│   │   │   │   ├── Microsoft.Identity.Client.NativeInterop.dll
+│   │   │   │   ├── Microsoft.Identity.Client.xml
+│   │   │   │   ├── Microsoft.IdentityModel.Abstractions.dll
+│   │   │   │   ├── Microsoft.IdentityModel.Abstractions.xml
+│   │   │   │   ├── Microsoft.IdentityModel.JsonWebTokens.dll
+│   │   │   │   ├── Microsoft.IdentityModel.JsonWebTokens.xml
+│   │   │   │   ├── Microsoft.IdentityModel.Logging.dll
+│   │   │   │   ├── Microsoft.IdentityModel.Logging.xml
+│   │   │   │   ├── Microsoft.IdentityModel.Tokens.dll
+│   │   │   │   ├── Microsoft.IdentityModel.Tokens.xml
+│   │   │   │   ├── Microsoft.OData.Client.dll
+│   │   │   │   ├── Microsoft.OData.Client.xml
+│   │   │   │   ├── Microsoft.OData.Core.dll
+│   │   │   │   ├── Microsoft.OData.Core.xml
+│   │   │   │   ├── Microsoft.OData.Edm.dll
+│   │   │   │   ├── Microsoft.OData.Edm.xml
+│   │   │   │   ├── Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll
+│   │   │   │   ├── Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.xml
+│   │   │   │   ├── Microsoft.Spatial.dll
+│   │   │   │   ├── Microsoft.Spatial.xml
+│   │   │   │   ├── Newtonsoft.Json.dll
+│   │   │   │   ├── Newtonsoft.Json.xml
+│   │   │   │   ├── ref
+│   │   │   │   │   ├── Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll
+│   │   │   │   ├── runtimes
+│   │   │   │   │   ├── win-arm64
+│   │   │   │   │   │   ├── native
+│   │   │   │   │   │   │   ├── msalruntime_arm64.dll
+│   │   │   │   │   ├── win-x64
+│   │   │   │   │   │   ├── native
+│   │   │   │   │   │   │   ├── msalruntime.dll
+│   │   │   │   │   ├── win-x86
+│   │   │   │   │   │   ├── native
+│   │   │   │   │   │   │   ├── msalruntime_x86.dll
+│   │   │   │   ├── System.Buffers.dll
+│   │   │   │   ├── System.Buffers.xml
+│   │   │   │   ├── System.IdentityModel.Tokens.Jwt.dll
+│   │   │   │   ├── System.IdentityModel.Tokens.Jwt.xml
+│   │   │   │   ├── System.Management.Automation.dll
+│   │   │   │   ├── System.Memory.dll
+│   │   │   │   ├── System.Memory.xml
+│   │   │   │   ├── System.Numerics.Vectors.dll
+│   │   │   │   ├── System.Numerics.Vectors.xml
+│   │   │   │   ├── System.Runtime.CompilerServices.Unsafe.dll
+│   │   │   │   ├── System.Runtime.CompilerServices.Unsafe.xml
+│   │   │   │   ├── System.Text.Json.dll
+│   │   │   │   ├── System.Text.Json.xml
+│   │   │   │   ├── System.Threading.Tasks.Extensions.dll
+│   │   │   │   ├── System.Threading.Tasks.Extensions.xml
+│   │   │   ├── PSGetModuleInfo.xml
+│   ├── Microsoft.PowerToys.Configure
+│   │   ├── 0.91.0.0
+│   │   │   ├── Microsoft.PowerToys.Configure.psd1
+│   │   │   ├── Microsoft.PowerToys.Configure.psm1
+│   ├── PDFTools
+│   │   ├── BouncyCastle.Crypto.dll
+│   │   ├── itextsharp.dll
+│   ├── PsPdf
+│   │   ├── 1.6
+│   │   │   ├── de
+│   │   │   │   ├── PdfSharp.Charting.resources.dll
+│   │   │   │   ├── PdfSharp.resources.dll
+│   │   │   ├── PdfLib.dll
+│   │   │   ├── PdfLib.pdb
+│   │   │   ├── PdfSharp.Charting.dll
+│   │   │   ├── PdfSharp.dll
+│   │   │   ├── PSGetModuleInfo.xml
+│   │   │   ├── PsPdf.dll
+│   │   │   ├── PsPdf.dll-Help.xml
+│   │   │   ├── PsPdf.pdb
+│   │   │   ├── PsPdf.psd1
+│   │   │   ├── System.Management.Automation.dll
+│   ├── PSWritePDF
+│   │   ├── 0.0.20
+│   │   │   ├── Lib
+│   │   │   │   ├── Core
+│   │   │   │   │   ├── BouncyCastle.Crypto.dll
+│   │   │   │   │   ├── BouncyCastle.Crypto.xml
+│   │   │   │   │   ├── itext.barcodes.dll
+│   │   │   │   │   ├── itext.barcodes.xml
+│   │   │   │   │   ├── itext.commons.dll
+│   │   │   │   │   ├── itext.commons.xml
+│   │   │   │   │   ├── itext.forms.dll
+│   │   │   │   │   ├── itext.forms.xml
+│   │   │   │   │   ├── itext.html2pdf.dll
+│   │   │   │   │   ├── itext.html2pdf.xml
+│   │   │   │   │   ├── itext.hyph.dll
+│   │   │   │   │   ├── itext.hyph.xml
+│   │   │   │   │   ├── itext.io.dll
+│   │   │   │   │   ├── itext.io.xml
+│   │   │   │   │   ├── itext.kernel.dll
+│   │   │   │   │   ├── itext.kernel.xml
+│   │   │   │   │   ├── itext.layout.dll
+│   │   │   │   │   ├── itext.layout.xml
+│   │   │   │   │   ├── itext.pdfa.dll
+│   │   │   │   │   ├── itext.pdfa.xml
+│   │   │   │   │   ├── itext.sign.dll
+│   │   │   │   │   ├── itext.sign.xml
+│   │   │   │   │   ├── itext.styledxmlparser.dll
+│   │   │   │   │   ├── itext.styledxmlparser.xml
+│   │   │   │   │   ├── itext.svg.dll
+│   │   │   │   │   ├── itext.svg.xml
+│   │   │   │   │   ├── Microsoft.DotNet.PlatformAbstractions.dll
+│   │   │   │   │   ├── Microsoft.DotNet.PlatformAbstractions.xml
+│   │   │   │   │   ├── Microsoft.Extensions.DependencyModel.dll
+│   │   │   │   │   ├── Microsoft.Extensions.DependencyModel.xml
+│   │   │   │   │   ├── Microsoft.Extensions.Logging.Abstractions.dll
+│   │   │   │   │   ├── Microsoft.Extensions.Logging.dll
+│   │   │   │   │   ├── Microsoft.Extensions.Options.dll
+│   │   │   │   ├── Default
+│   │   │   │   │   ├── BouncyCastle.Crypto.dll
+│   │   │   │   │   ├── BouncyCastle.Crypto.xml
+│   │   │   │   │   ├── itext.barcodes.dll
+│   │   │   │   │   ├── itext.barcodes.xml
+│   │   │   │   │   ├── itext.commons.dll
+│   │   │   │   │   ├── itext.commons.xml
+│   │   │   │   │   ├── itext.forms.dll
+│   │   │   │   │   ├── itext.forms.xml
+│   │   │   │   │   ├── itext.html2pdf.dll
+│   │   │   │   │   ├── itext.html2pdf.xml
+│   │   │   │   │   ├── itext.hyph.dll
+│   │   │   │   │   ├── itext.hyph.xml
+│   │   │   │   │   ├── itext.io.dll
+│   │   │   │   │   ├── itext.io.xml
+│   │   │   │   │   ├── itext.kernel.dll
+│   │   │   │   │   ├── itext.kernel.xml
+│   │   │   │   │   ├── itext.layout.dll
+│   │   │   │   │   ├── itext.layout.xml
+│   │   │   │   │   ├── itext.pdfa.dll
+│   │   │   │   │   ├── itext.pdfa.xml
+│   │   │   │   │   ├── itext.sign.dll
+│   │   │   │   │   ├── itext.sign.xml
+│   │   │   │   │   ├── itext.styledxmlparser.dll
+│   │   │   │   │   ├── itext.styledxmlparser.xml
+│   │   │   │   │   ├── itext.svg.dll
+│   │   │   │   │   ├── itext.svg.xml
+│   │   │   │   │   ├── Microsoft.Extensions.Logging.Abstractions.dll
+│   │   │   │   │   ├── Microsoft.Extensions.Logging.dll
+│   │   │   │   │   ├── Microsoft.Extensions.Options.dll
+│   │   │   ├── PSGetModuleInfo.xml
+│   │   │   ├── PSWritePDF.Libraries.ps1
+│   │   │   ├── PSWritePDF.psd1
+│   │   │   ├── PSWritePDF.psm1
+├── Profile
+│   ├── Microsoft.PowerShell_profile.ps1
+│   ├── Microsoft.PowerShell_profile.txt
+├── Scan-PowerShellStructure.ps1
+├── Scripts
+│   ├── Fix_PowerShell_Structure.ps1
+│   ├── InstalledScriptInfos
+├── Tools
+│   ├── Ask-OpenAI.ps1
+│   ├── PowerShellProjects
+│   ├── SessionLogger.ps1
+│   ├── Whisper
+│   │   ├── Transcribe-Audio.ps1
+

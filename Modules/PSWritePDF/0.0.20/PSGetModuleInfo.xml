@@ -1,0 +1,189 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSWritePDF</S>
+      <Version N="Version">0.0.20</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Little project to create, read, modify, split, merge PDF files on Windows, Linux and Mac.</S>
+      <S N="Author">Przemyslaw Klys</S>
+      <S N="CompanyName">Przemyslaw.Klys</S>
+      <S N="Copyright">(c) 2011 - 2022 Przemyslaw Klys @ Evotec. All rights reserved.</S>
+      <DT N="PublishedDate">2022-10-02T17:24:49-07:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2025-05-03T20:14:17.7662437-07:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/EvotecIT/PSWritePDF/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/EvotecIT/PSWritePDF</URI>
+      <URI N="IconUri">https://evotec.xyz/wp-content/uploads/2019/11/PSWritePDF.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PDF</S>
+          <S>macOS</S>
+          <S>linux</S>
+          <S>windows</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Close-PDF</S>
+                <S>Get-PDF</S>
+                <S>Get-PDFDetails</S>
+                <S>Get-PDFFormField</S>
+                <S>New-PDF</S>
+                <S>New-PDFArea</S>
+                <S>New-PDFDocument</S>
+                <S>New-PDFImage</S>
+                <S>New-PDFInfo</S>
+                <S>New-PDFList</S>
+                <S>New-PDFListItem</S>
+                <S>New-PDFOptions</S>
+                <S>New-PDFPage</S>
+                <S>New-PDFTable</S>
+                <S>New-PDFText</S>
+                <S>Register-PDFFont</S>
+                <S>Get-PDFConstantAction</S>
+                <S>Get-PDFConstantColor</S>
+                <S>Get-PDFConstantFont</S>
+                <S>Get-PDFConstantPageSize</S>
+                <S>Get-PDFConstantVersion</S>
+                <S>Convert-HTMLToPDF</S>
+                <S>Convert-PDFToText</S>
+                <S>Merge-PDF</S>
+                <S>Set-PDFForm</S>
+                <S>Split-PDF</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Close-PDF</S>
+                <S>Get-PDF</S>
+                <S>Get-PDFDetails</S>
+                <S>Get-PDFFormField</S>
+                <S>New-PDF</S>
+                <S>New-PDFArea</S>
+                <S>New-PDFDocument</S>
+                <S>New-PDFImage</S>
+                <S>New-PDFInfo</S>
+                <S>New-PDFList</S>
+                <S>New-PDFListItem</S>
+                <S>New-PDFOptions</S>
+                <S>New-PDFPage</S>
+                <S>New-PDFTable</S>
+                <S>New-PDFText</S>
+                <S>Register-PDFFont</S>
+                <S>Get-PDFConstantAction</S>
+                <S>Get-PDFConstantColor</S>
+                <S>Get-PDFConstantFont</S>
+                <S>Get-PDFConstantPageSize</S>
+                <S>Get-PDFConstantVersion</S>
+                <S>Convert-HTMLToPDF</S>
+                <S>Convert-PDFToText</S>
+                <S>Merge-PDF</S>
+                <S>Set-PDFForm</S>
+                <S>Split-PDF</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2011 - 2022 Przemyslaw Klys @ Evotec. All rights reserved.</S>
+          <S N="description">Little project to create, read, modify, split, merge PDF files on Windows, Linux and Mac.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">358252</S>
+          <S N="downloadCount">418513</S>
+          <S N="packageSize">14950835</S>
+          <S N="published">10/2/2022 5:24:49 PM -07:00</S>
+          <S N="created">10/2/2022 5:24:49 PM -07:00</S>
+          <S N="lastUpdated">5/4/2025 3:00:00 AM -07:00</S>
+          <S N="tags">PDF macOS linux windows PSModule PSEdition_Desktop PSEdition_Core PSFunction_Close-PDF PSCommand_Close-PDF PSFunction_Get-PDF PSCommand_Get-PDF PSFunction_Get-PDFDetails PSCommand_Get-PDFDetails PSFunction_Get-PDFFormField PSCommand_Get-PDFFormField PSFunction_New-PDF PSCommand_New-PDF PSFunction_New-PDFArea PSCommand_New-PDFArea PSFunction_New-PDFDocument PSCommand_New-PDFDocument PSFunction_New-PDFImage PSCommand_New-PDFImage PSFunction_New-PDFInfo PSCommand_New-PDFInfo PSFunction_New-PDFList PSCommand_New-PDFList PSFunction_New-PDFListItem PSCommand_New-PDFListItem PSFunction_New-PDFOptions PSCommand_New-PDFOptions PSFunction_New-PDFPage PSCommand_New-PDFPage PSFunction_New-PDFTable PSCommand_New-PDFTable PSFunction_New-PDFText PSCommand_New-PDFText PSFunction_Register-PDFFont PSCommand_Register-PDFFont PSFunction_Get-PDFConstantAction PSCommand_Get-PDFConstantAction PSFunction_Get-PDFConstantColor PSCommand_Get-PDFConstantColor PSFunction_Get-PDFConstantFont PSCommand_Get-PDFConstantFont PSFunction_Get-PDFConstantPageSize PSCommand_Get-PDFConstantPageSize PSFunction_Get-PDFConstantVersion PSCommand_Get-PDFConstantVersion PSFunction_Convert-HTMLToPDF PSCommand_Convert-HTMLToPDF PSFunction_Convert-PDFToText PSCommand_Convert-PDFToText PSFunction_Merge-PDF PSCommand_Merge-PDF PSFunction_Set-PDFForm PSCommand_Set-PDFForm PSFunction_Split-PDF PSCommand_Split-PDF PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-05-04T03:00:00Z</S>
+          <S N="NormalizedVersion">0.0.20</S>
+          <S N="Authors">Przemyslaw Klys</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSWritePDF.nuspec|Lib\Core\itext.hyph.dll|Lib\Core\itext.io.dll|Lib\Core\itext.kernel.dll|Lib\Core\itext.layout.dll|Lib\Core\itext.pdfa.dll|Lib\Core\itext.sign.dll|Lib\Core\itext.styledxmlparser.dll|Lib\Core\itext.svg.dll|Lib\Core\Microsoft.DotNet.PlatformAbstractions.dll|Lib\Core\Microsoft.Extensions.DependencyModel.dll|Lib\Core\Microsoft.Extensions.Logging.Abstractions.dll|Lib\Core\Microsoft.Extensions.Options.dll|Lib\Default\BouncyCastle.Crypto.xml|Lib\Default\itext.barcodes.xml|Lib\Default\itext.commons.xml|Lib\Default\itext.forms.xml|Lib\Default\itext.html2pdf.xml|Lib\Default\itext.hyph.xml|Lib\Default\itext.io.xml|Lib\Default\itext.kernel.xml|Lib\Default\itext.layout.xml|Lib\Default\itext.pdfa.xml|Lib\Default\itext.sign.xml|Lib\Default\itext.styledxmlparser.xml|Lib\Default\itext.svg.xml|Lib\Default\Microsoft.Extensions.Logging.dll|PSWritePDF.Libraries.ps1|PSWritePDF.psm1|Lib\Core\itext.barcodes.dll|Lib\Core\itext.commons.dll|Lib\Core\itext.forms.dll|Lib\Core\itext.html2pdf.dll|Lib\Core\itext.hyph.xml|Lib\Core\itext.io.xml|Lib\Core\itext.kernel.xml|Lib\Core\itext.layout.xml|Lib\Core\itext.pdfa.xml|Lib\Core\itext.sign.xml|Lib\Core\itext.styledxmlparser.xml|Lib\Core\itext.svg.xml|Lib\Core\Microsoft.DotNet.PlatformAbstractions.xml|Lib\Core\Microsoft.Extensions.DependencyModel.xml|Lib\Core\Microsoft.Extensions.Logging.dll|Lib\Default\BouncyCastle.Crypto.dll|Lib\Default\itext.barcodes.dll|Lib\Default\itext.commons.dll|Lib\Default\itext.forms.dll|Lib\Default\itext.html2pdf.dll|Lib\Default\itext.hyph.dll|Lib\Default\itext.io.dll|Lib\Default\itext.kernel.dll|Lib\Default\itext.layout.dll|Lib\Default\itext.pdfa.dll|Lib\Default\itext.sign.dll|Lib\Default\itext.styledxmlparser.dll|Lib\Default\itext.svg.dll|Lib\Default\Microsoft.Extensions.Logging.Abstractions.dll|Lib\Default\Microsoft.Extensions.Options.dll|Lib\Core\BouncyCastle.Crypto.dll|Lib\Core\itext.barcodes.xml|Lib\Core\itext.commons.xml|Lib\Core\itext.forms.xml|Lib\Core\itext.html2pdf.xml|PSWritePDF.psd1|Lib\Core\BouncyCastle.Crypto.xml</S>
+          <S N="GUID">19fcb43c-d8c5-44a9-84e4-bccf29765490</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Evotec</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\Owner\Documents\PowerShell\Modules\PSWritePDF\0.0.20</S>
+    </MS>
+  </Obj>
+</Objs>

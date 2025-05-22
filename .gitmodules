@@ -1,0 +1,3 @@
+[submodule "KnowledgeBase/GrokAI/grok-sdk"]
+	path = KnowledgeBase/GrokAI/grok-sdk
+	url = https://github.com/xai-org/grok.git

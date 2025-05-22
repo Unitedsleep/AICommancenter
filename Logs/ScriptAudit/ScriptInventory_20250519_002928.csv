@@ -1,0 +1,5 @@
+"FileName","RelativePath","SizeKB","LastModified","Description"
+"Ask-OpenAI.ps1","Tools\Ask-OpenAI.ps1","0.95","5/18/2025 9:53:54 PM","No description"
+"SessionLogger.ps1","Tools\SessionLogger.ps1","0.63","5/18/2025 9:58:12 PM","SessionLogger.ps1 — Logs PowerShell version and session start"
+"Transcribe-Audio.ps1","Tools\Whisper\Transcribe-Audio.ps1","1.92","5/18/2025 10:29:44 PM","No description"
+"Fix_PowerShell_Structure.ps1","Scripts\Fix_PowerShell_Structure.ps1","1.71","5/17/2025 9:40:30 PM","PowerShell Script: Fix PowerShell AICommandCenter Directory Structure"
