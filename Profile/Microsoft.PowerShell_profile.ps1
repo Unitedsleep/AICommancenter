@@ -1,20 +1,23 @@
 # === PowerShell AI Command Center Profile ===
 
-$env:PSModulePath = "X:\AICommandCenter\PowerShell\Modules;" + $env:PSModulePath
+# Determine repository root from $env:AICmdRoot or relative to this script
+$repoRoot = if ($env:AICmdRoot) { $env:AICmdRoot } else { Resolve-Path (Join-Path $PSScriptRoot '..') }
 
-Get-ChildItem -Path "X:\AICommandCenter\PowerShell\Modules" -Directory | ForEach-Object {
+$env:PSModulePath = (Join-Path $repoRoot 'Modules') + ';' + $env:PSModulePath
+
+Get-ChildItem -Path (Join-Path $repoRoot 'Modules') -Directory | ForEach-Object {
     Import-Module $_.FullName -ErrorAction SilentlyContinue
 }
 
-. "X:\AICommandCenter\PowerShell\Tools\SessionLogger.ps1"
-. "X:\AICommandCenter\PowerShell\Tools\Ask-OpenAI.ps1"
+. (Join-Path $repoRoot 'Tools' 'SessionLogger.ps1')
+. (Join-Path $repoRoot 'Tools' 'Ask-OpenAI.ps1')
 
-if (Test-Path "X:\AICommandCenter\PowerShell\Tools\Logging\Write-Log.ps1") {
-    . "X:\AICommandCenter\PowerShell\Tools\Logging\Write-Log.ps1"
+if (Test-Path (Join-Path $repoRoot 'Tools' 'Logging' 'Write-Log.ps1')) {
+    . (Join-Path $repoRoot 'Tools' 'Logging' 'Write-Log.ps1')
 }
 
-if (Test-Path "X:\AICommandCenter\PowerShell") {
-    Set-Location "X:\AICommandCenter\PowerShell"
+if (Test-Path $repoRoot) {
+    Set-Location $repoRoot
 } elseif (Test-Path "$env:USERPROFILE\Documents") {
     Set-Location "$env:USERPROFILE\Documents"
 } else {
@@ -24,12 +27,12 @@ if (Test-Path "X:\AICommandCenter\PowerShell") {
 $realProfile = $PROFILE
 $redirectLoader = @'
 # Redirect profile loader to AI Command Center
-if (Test-Path "X:\\AICommandCenter\\PowerShell\\Profile\\Microsoft.PowerShell_profile.ps1") {
-    . "X:\\AICommandCenter\\PowerShell\\Profile\\Microsoft.PowerShell_profile.ps1"
+if (Test-Path "$repoRoot\\Profile\\Microsoft.PowerShell_profile.ps1") {
+    . "$repoRoot\\Profile\\Microsoft.PowerShell_profile.ps1"
 }
 '@
 
 $redirectLoader | Set-Content -Path $realProfile -Encoding UTF8
 
-Write-Host "`n✅ Boot profile now redirects to: X:\AICommandCenter\PowerShell\Profile\" -ForegroundColor Green
+Write-Host "`n✅ Boot profile now redirects to: $repoRoot\Profile\" -ForegroundColor Green
 

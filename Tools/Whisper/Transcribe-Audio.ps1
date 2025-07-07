@@ -3,9 +3,12 @@ param (
     [string]$SourceUrl
 )
 
+# Determine repository root from $env:AICmdRoot or relative to this script
+$repoRoot = if ($env:AICmdRoot) { $env:AICmdRoot } else { Resolve-Path (Join-Path $PSScriptRoot '../..') }
+
 # Default input/output folders
-$defaultInputDir = "X:\AICommandCenter\PowerShell\Data\RawAudio"
-$transcriptDir = "X:\AICommandCenter\PowerShell\Data\Transcripts"
+$defaultInputDir = Join-Path $repoRoot 'Data' 'RawAudio'
+$transcriptDir = Join-Path $repoRoot 'Data' 'Transcripts'
 
 # Create required folders if missing
 foreach ($dir in @($defaultInputDir, $transcriptDir)) {
