@@ -1,7 +1,7 @@
 # ========================================
 # 🧠 AgentChatController — Dual API Chat Engine
 # Supports OpenAI + Grok via natural language prompts
-# Requires: .env with OPENAI_API_KEY and GROK_API_KEY
+# Requires: copy Config/.env.example to Config/.env and set OPENAI_API_KEY and GROK_API_KEY
 # ========================================
 
 $envPath = "X:\AICommandCenter\PowerShell\Config\.env"
