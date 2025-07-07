@@ -9,7 +9,9 @@ This repository collects various PowerShell tools and modules used for working w
    ```bash
    pip install openai-whisper
    ```
-3. Optionally clone the Grok SDK if you plan to use Grok:
+3. **Chrome or Edge** – required for `Start-HeadlessBrowser.ps1`. The script checks
+   common install locations based on your OS. Use `-BrowserPath` if it cannot find the executable.
+4. Optionally clone the Grok SDK if you plan to use Grok:
    ```bash
    git clone https://github.com/xai-org/grok.git KnowledgeBase/GrokAI/grok-sdk
    ```
@@ -53,7 +55,9 @@ Run `Tools/Load-Env.ps1` to import the variables into the current PowerShell ses
   ```powershell
   ./Tools/SessionLogger.ps1
   ```
-- **Start-HeadlessBrowser.ps1** – Launches Chrome or Edge in headless mode:
+- **Start-HeadlessBrowser.ps1** – Launches Chrome or Edge in headless mode. The
+  script verifies the browser executable based on your OS. Provide a custom path
+  with `-BrowserPath` if needed:
   ```powershell
   ./Tools/Start-HeadlessBrowser.ps1 -Url "https://example.com" -Edge
   ```
