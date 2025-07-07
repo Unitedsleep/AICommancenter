@@ -57,6 +57,14 @@ Run `Tools/Load-Env.ps1` to import the variables into the current PowerShell ses
   ```powershell
   ./Tools/Start-HeadlessBrowser.ps1 -Url "https://example.com" -Edge
   ```
+- **Fix_PowerShell_Structure.ps1** – Reorganizes folders using its own location to find the repo root:
+  ```powershell
+  ./Scripts/Fix_PowerShell_Structure.ps1
+  ```
+- **ScriptPlacementFixLog.ps1** – Moves scripts from `Logs/ScriptAudit` to their proper directories:
+  ```powershell
+  ./Scripts/ScriptPlacementFixLog.ps1
+  ```
 
 ## Optional Grok SDK
 

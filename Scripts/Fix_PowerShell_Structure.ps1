@@ -1,10 +1,13 @@
-# PowerShell Script: Fix PowerShell AICommandCenter Directory Structure
-# Authoritative structure: X:\AICommandCenter\PowerShell\
-# This script moves all misplaced folders back into the correct hierarchy.
+# Fix PowerShell directory layout relative to the repository root
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+param(
+    [string]$RepoRoot = (Resolve-Path (Join-Path $scriptRoot '..')).Path
+)
 
-$Root = "X:\AICommandCenter"
-$PowerShellRoot = "$Root\PowerShell"
-$BackupRoot = "$Root\Backup\PreStructureFix-$(Get-Date -Format 'yyyyMMdd_HHmm')"
+# $RepoRoot now points to the repository root containing the Tools and Scripts folders
+
+$PowerShellRoot = $RepoRoot
+$BackupRoot = Join-Path $RepoRoot "Backup/PreStructureFix-$(Get-Date -Format 'yyyyMMdd_HHmm')"
 $ValidFolders = @("Tools", "Data", "Logs", "Profile", "Modules", "Scripts", "AIModels", "Projects")
 
 # Create backup folder
@@ -12,8 +15,8 @@ New-Item -ItemType Directory -Force -Path $BackupRoot | Out-Null
 $MoveLog = @()
 
 # Step 1: Backup and remove misplaced top-level folders
-Get-ChildItem -Path $Root -Directory | Where-Object {
-    $_.Name -ne "PowerShell" -and $_.Name -ne "Backup"
+Get-ChildItem -Path $RepoRoot -Directory | Where-Object {
+    $_.Name -ne "Backup"
 } | ForEach-Object {
     $source = $_.FullName
     $destination = Join-Path $BackupRoot $_.Name
