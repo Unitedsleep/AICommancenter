@@ -11,3 +11,5 @@ Modules/**/bin/
 
 # Ignore environment configuration files
 Config/.env
+# Ignore timestamped ScriptPlacementFix log outputs
+Scripts/ScriptPlacementFixLog_*.ps1
