@@ -3,9 +3,10 @@ param (
     [string]$SourceUrl
 )
 
-# Default input/output folders
-$defaultInputDir = "X:\AICommandCenter\PowerShell\Data\RawAudio"
-$transcriptDir = "X:\AICommandCenter\PowerShell\Data\Transcripts"
+# Determine repository root relative to this script
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$defaultInputDir = Join-Path $scriptRoot '..\Data\RawAudio'
+$transcriptDir   = Join-Path $scriptRoot '..\Data\Transcripts'
 
 # Create required folders if missing
 foreach ($dir in @($defaultInputDir, $transcriptDir)) {

@@ -4,7 +4,8 @@
 # Requires: .env with OPENAI_API_KEY and GROK_API_KEY
 # ========================================
 
-$envPath = "X:\AICommandCenter\PowerShell\Config\.env"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$envPath   = Join-Path $scriptRoot '..\Config\.env'
 
 # === Load API keys from .env file ===
 if (-not (Test-Path $envPath)) {

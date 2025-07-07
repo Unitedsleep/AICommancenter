@@ -14,9 +14,14 @@ This repository collects various PowerShell tools and modules used for working w
    git clone https://github.com/xai-org/grok.git KnowledgeBase/GrokAI/grok-sdk
    ```
 
+## Using the PowerShell profile
+
+The repository includes a profile script at `Profile/Microsoft.PowerShell_profile.ps1`.
+Copy this file to your PowerShell profile path (run `$PROFILE` in PowerShell to see the location) or invoke it manually to automatically load the modules and environment variables on startup.
+
 ## Environment variables
 
-API keys are loaded from a `.env` file. Scripts such as `AgentChatController_20250519_121655.ps1` and `Load-Env.ps1` expect this file at `Config/.env`:
+API keys are loaded from a `.env` file. An example file is provided at `Config/.env.example`. Copy it to `Config/.env` and fill in your keys. Scripts such as `AgentChatController_20250519_121655.ps1` and `Load-Env.ps1` expect this file:
 
 ```
 OPENAI_API_KEY=<your OpenAI key>
@@ -47,6 +52,10 @@ Run `Tools/Load-Env.ps1` to import the variables into the current PowerShell ses
 - **SessionLogger.ps1** – Writes PowerShell version and timestamp to `Logs/SessionLog.csv`:
   ```powershell
   ./Tools/SessionLogger.ps1
+  ```
+- **Start-HeadlessBrowser.ps1** – Launches Chrome or Edge in headless mode:
+  ```powershell
+  ./Tools/Start-HeadlessBrowser.ps1 -Url "https://example.com" -Edge
   ```
 
 ## Optional Grok SDK

@@ -1,14 +1,16 @@
 # === PowerShell Folder Structure Scan ===
 
-# Ensure Logs directory exists
-$logPath = "X:\AICommandCenter\PowerShell\Logs\PowerShell_TreeMap.txt"
+# Determine repository root and log location
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Resolve-Path $scriptRoot
+$logPath = Join-Path $repoRoot 'Logs/PowerShell_TreeMap.txt'
 $logDir = Split-Path $logPath
 if (-not (Test-Path $logDir)) {
     New-Item -ItemType Directory -Path $logDir -Force | Out-Null
 }
 
-# Collect all paths under PowerShell root
-$structure = Get-ChildItem -Path "X:\AICommandCenter\PowerShell" -Recurse -Force -ErrorAction SilentlyContinue |
+# Collect all paths under repository root
+$structure = Get-ChildItem -Path $repoRoot -Recurse -Force -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty FullName | Sort-Object
 
 # Format paths into a visual tree
