@@ -1,1 +1,2 @@
-$env:PSModulePath += ";C:\Users\Owner\Documents\PowerShellProjects"
+# Add custom module locations here if needed. Example:
+# $env:PSModulePath += ";$env:USERPROFILE\Documents\PowerShellProjects"
