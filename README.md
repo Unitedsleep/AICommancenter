@@ -8,7 +8,7 @@ This repository collects various PowerShell tools and modules used for working w
 - **Scripts/** – helper scripts for reorganizing files and other maintenance tasks.
 - **Profile/** – the PowerShell profile script used by this repo.
 - **Logs/** – output from the logger and other audit scripts.
-- **KnowledgeBase/** – optional documentation and third‑party resources (e.g., Grok SDK).
+- The repository previously used a `KnowledgeBase/` directory for optional documentation and third-party resources. It is not included; create a folder such as `External/` if you need to store the Grok SDK or similar packages.
 
 ## Installing dependencies
 
@@ -21,7 +21,7 @@ This repository collects various PowerShell tools and modules used for working w
    common install locations based on your OS. Use `-BrowserPath` if it cannot find the executable.
 4. Optionally clone the Grok SDK if you plan to use Grok:
    ```bash
-   git clone https://github.com/xai-org/grok.git KnowledgeBase/GrokAI/grok-sdk
+   git clone https://github.com/xai-org/grok.git External/GrokAI/grok-sdk
    ```
 
 ## Environment setup
@@ -105,12 +105,12 @@ GROK_API_KEY=<your Grok key>
 
 ## Optional Grok SDK
 
-The directory `KnowledgeBase/GrokAI/grok-sdk` previously referenced the [grok](https://github.com/xai-org/grok) project as a submodule. Clone it manually if needed:
+The repository no longer contains a `KnowledgeBase/` directory. If you want the [grok](https://github.com/xai-org/grok) SDK, clone it into a location of your choice, for example `External/GrokAI/grok-sdk`:
 ```bash
-git clone https://github.com/xai-org/grok.git KnowledgeBase/GrokAI/grok-sdk
+git clone https://github.com/xai-org/grok.git External/GrokAI/grok-sdk
 ```
 Update it later with:
 ```bash
-cd KnowledgeBase/GrokAI/grok-sdk
+cd External/GrokAI/grok-sdk
 git pull
 ```
