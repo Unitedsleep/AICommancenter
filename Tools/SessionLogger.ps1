@@ -1,8 +1,9 @@
 # SessionLogger.ps1 — Logs PowerShell version and session start
 
-# Define proper log location
-$logRoot = "X:\AICommandCenter\PowerShell\Logs"
-$logFile = "$logRoot\SessionLog.csv"
+# Determine repository root relative to this script
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$logRoot = Join-Path $scriptRoot '..\Logs'
+$logFile = Join-Path $logRoot 'SessionLog.csv'
 
 # Ensure directory exists
 if (-not (Test-Path $logRoot)) {
