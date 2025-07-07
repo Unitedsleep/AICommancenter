@@ -11,3 +11,5 @@ Modules/**/bin/
 
 # Ignore environment configuration files
 Config/.env
+# Ignore any other .env files that may be created
+*.env
