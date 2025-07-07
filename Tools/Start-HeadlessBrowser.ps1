@@ -52,5 +52,5 @@ try {
     Start-Process -FilePath $browserExe -ArgumentList $arguments
     Write-Host "✅ Launched $browserExe in headless mode." -ForegroundColor Green
 } catch {
-    Write-Error "❌ Failed to launch $browserExe: $($_.Exception.Message)"
+    Write-Error "❌ Failed to launch ${browserExe}: $($_.Exception.Message)"
 }
