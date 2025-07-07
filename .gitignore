@@ -1,0 +1,13 @@
+# Ignore log directories
+Logs/
+
+# Ignore diagnostic output
+ProgramDiagnostics/
+
+# Ignore compiled module binaries
+Modules/**/bin/
+*.dll
+*.pdb
+
+# Ignore environment configuration files
+Config/.env
