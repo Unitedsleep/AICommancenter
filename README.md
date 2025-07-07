@@ -31,10 +31,13 @@ This repository collects various PowerShell tools and modules used for working w
    ```powershell
    ./Tools/Load-Env.ps1
    ```
-3. Optionally import the profile to load helper functions and modules:
+3. Run the repository profile script **once**:
    ```powershell
-   . ./Profile/Microsoft.PowerShell_profile.ps1
+   ./Profile/Microsoft.PowerShell_profile.ps1
    ```
+   This overwrites your regular `$PROFILE` with a small loader that points to
+   `Profile/Microsoft.PowerShell_profile.ps1`, so all helper functions load
+   automatically in future sessions.
 
 The `.env` file is required by scripts such as `AgentChatController_20250519_121655.ps1` and should contain:
 
@@ -84,17 +87,19 @@ GROK_API_KEY=<your Grok key>
 ## Example session
 
 ```powershell
-# 1) Load environment variables and helper functions
+# 1) Load environment variables
 ./Tools/Load-Env.ps1
-. ./Profile/Microsoft.PowerShell_profile.ps1
 
-# 2) Log the session start
+# 2) (Run once) overwrite your profile with the repository loader
+./Profile/Microsoft.PowerShell_profile.ps1
+
+# 3) Log the session start
 ./Tools/SessionLogger.ps1
 
-# 3) Query both chat APIs
+# 4) Query both chat APIs
 ./Tools/AgentChatController_20250519_121655.ps1 -Query "Hello" -Mode Both
 
-# 4) Transcribe an audio file
+# 5) Transcribe an audio file
 ./Tools/Whisper/Transcribe-Audio.ps1 -AudioPath path/to/file.mp3
 ```
 
