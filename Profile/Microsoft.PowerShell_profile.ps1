@@ -1,4 +1,6 @@
 # === PowerShell AI Command Center Profile ===
+# This script holds the definitive profile logic. The previous
+# `Microsoft.PowerShell_profile.txt` has been removed.
 
 # Determine repository root relative to this profile
 $profileDir = Split-Path -Parent $MyInvocation.MyCommand.Path

@@ -18,7 +18,7 @@ This repository collects various PowerShell tools and modules used for working w
 
 ## Using the PowerShell profile
 
-The repository includes a profile script at `Profile/Microsoft.PowerShell_profile.ps1`.
+The repository includes the canonical profile script at `Profile/Microsoft.PowerShell_profile.ps1`.
 Copy this file to your PowerShell profile path (run `$PROFILE` in PowerShell to see the location) or invoke it manually to automatically load the modules and environment variables on startup.
 
 ## Environment variables
