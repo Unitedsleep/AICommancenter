@@ -26,7 +26,7 @@ This repository collects various PowerShell tools and modules used for working w
 
 ## Environment setup
 
-1. Copy `Config/.env.example` to `Config/.env` and add your API keys.
+1. Copy `Config/.env.example` to `Config/.env` and populate it with your personal API keys.
 2. Load the variables in a PowerShell session:
    ```powershell
    ./Tools/Load-Env.ps1
