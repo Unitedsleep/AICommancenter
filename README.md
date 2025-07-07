@@ -19,3 +19,10 @@ cd KnowledgeBase/GrokAI/grok-sdk
 git pull
 ```
 
+## Script Path Configuration
+
+Several scripts previously assumed the repository was checked out to
+`X:\AICommandCenter\PowerShell`. Paths are now resolved relative to each
+script. You can override the detected root by setting the `$env:AICmdRoot`
+environment variable to your clone's location.
+

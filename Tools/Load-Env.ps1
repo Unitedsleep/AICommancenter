@@ -1,7 +1,9 @@
 # =====================================
 # Load-Env.ps1 — Import .env to $env:
 # =====================================
-$envFile = "X:\AICommandCenter\PowerShell\Config\.env"
+# Determine repository root either from $env:AICmdRoot or relative to this script
+$repoRoot = if ($env:AICmdRoot) { $env:AICmdRoot } else { Resolve-Path (Join-Path $PSScriptRoot '..') }
+$envFile = Join-Path $repoRoot 'Config' '.env'
 
 if (-not (Test-Path $envFile)) {
     Write-Error "❌ .env file not found: $envFile"
