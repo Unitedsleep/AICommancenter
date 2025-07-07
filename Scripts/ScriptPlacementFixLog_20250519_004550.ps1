@@ -4,9 +4,14 @@
 # into the Tools or Scripts folder depending on purpose
 # ==========================================
 
-$sourceDir = "X:\AICommandCenter\PowerShell\Logs\ScriptAudit"
-$toolsDir  = "X:\AICommandCenter\PowerShell\Tools"
-$scriptsDir = "X:\AICommandCenter\PowerShell\Scripts"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+param(
+    [string]$RepoRoot = (Resolve-Path (Join-Path $scriptRoot '..')).Path
+)
+
+$sourceDir = Join-Path $RepoRoot 'Logs/ScriptAudit'
+$toolsDir  = Join-Path $RepoRoot 'Tools'
+$scriptsDir = Join-Path $RepoRoot 'Scripts'
 
 # Get all misplaced PS1 files
 $misplacedScripts = Get-ChildItem -Path $sourceDir -Filter *.ps1 -File
