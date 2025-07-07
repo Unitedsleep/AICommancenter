@@ -18,11 +18,6 @@ Get-ChildItem -Path "$repoRoot\Modules" -Directory | ForEach-Object {
 . "$repoRoot\Tools\SessionLogger.ps1"
 . "$repoRoot\Tools\Ask-OpenAI.ps1"
 . "$repoRoot\Tools\Start-HeadlessBrowser.ps1"
-
-if (Test-Path "$repoRoot\Tools\Logging\Write-Log.ps1") {
-    . "$repoRoot\Tools\Logging\Write-Log.ps1"
-}
-
 # Start in the repository root by default
 Set-Location $repoRoot
 
